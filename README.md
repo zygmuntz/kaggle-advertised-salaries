@@ -8,3 +8,4 @@ See [http://fastml.com/predicting-advertised-salaries/](http://fastml.com/predic
 	first.py - Take some lines from the input file and save them to the output file
 	split.py - split a file into two randomly, line by line
 	unlog_predictions.r - convert VW's log predictions back to a normal scale by taking exp()
+	update_locations.py - replace location columns from the original file with parsed location (five columns)
