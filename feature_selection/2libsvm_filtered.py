@@ -1,4 +1,4 @@
-'convert a train+test file to libsvm format, using only some features'
+'convert a train+test file to libsvm format, using only the features selected by vw-varinfo'
 
 import csv
 import sys
@@ -69,24 +69,8 @@ def filter_words( words, col_name ):
 			filtered_words.append( word )
 	return filtered_words
 	
-'''	
-# return tokenized text	
-def tokenize( text ):	
-	text = text.replace( "'", "" )
-	text = re.sub( r'\W+', ' ', text )
-	text = text.lower()
-	return text
-	
-# return a list of unique words from (tokenized) text
-def get_words( text ):
-	text = tokenize( text )
-	text = text.split()
-	words = list( set( text ))
-	return words	
-'''
 
 #################################################
-
 
 csv.field_size_limit( 1000000 )
 
@@ -161,7 +145,7 @@ for i in sorted( indexes2binarize + indexes2tokenize ):
 	offsets[i] = first_available_offset
 	first_available_offset += len( unique_values[i] )
 
-print sorted( offsets.values())
+# print sorted( offsets.values())
 
 	
 # map values to indexes
