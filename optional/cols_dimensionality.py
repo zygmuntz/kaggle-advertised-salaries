@@ -68,7 +68,6 @@ for i in sorted( unique_values ):
 		pass
 		# print unique_values[i]
 		
-sys.exit( 0 )
 
 
 		
