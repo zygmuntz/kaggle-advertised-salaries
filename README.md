@@ -12,5 +12,4 @@ See [http://fastml.com/predicting-advertised-salaries/](http://fastml.com/predic
 	update_locations.py - replace location columns from the original file with parsed location (five columns) - slightly buggy
 	update_locations_fixed.py - a fixed version of update_locations.py
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/zygmuntz/kaggle-advertised-salaries/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
